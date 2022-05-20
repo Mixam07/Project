@@ -1,0 +1,30 @@
+.main{
+  &__item{
+    margin-bottom: rem(30);
+  }
+  .flex{
+    display: flex;
+  }
+  &__photo{
+    margin-left: rem(25);
+    img{
+      width: 150px;
+      margin-bottom: rem(10);
+      border-radius: rem(15);
+    }
+  }
+  &__text{
+    font-size: rem(22);
+    ol{
+      margin: rem(15);
+      li{
+        margin-bottom: rem(10);
+      }
+    }
+  }
+  &__name{
+    font-weight: 500;
+    font-size: rem(18);
+    text-align: center;
+  }
+}

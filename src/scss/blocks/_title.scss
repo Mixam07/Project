@@ -1,0 +1,55 @@
+.title{
+  font-size: rem(40);
+  font-weight: 700;
+  margin-bottom: rem(50);
+  text-align: center;
+  &_popup{
+    text-align: start;
+    font-size: rem(30);
+    font-weight: 500;
+    margin-bottom: rem(15);
+  }
+  &_main{
+    text-align: center;
+    font-size: rem(50);
+    font-weight: 400;
+    margin-bottom: rem(40);
+    font-family: "Lobster";
+  }
+  &_mini{
+    text-align: start;
+    font-size: rem(30);
+    font-weight: 500;
+    margin-bottom: rem(15);
+    margin-left: rem(50);
+  }
+  &_addition{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: rem(28);
+    background: rgb(255, 152, 152);
+    border-radius: rem(50);
+    padding: rem(10);
+    font-weight: 500;
+    margin-bottom: rem(50);
+    cursor: pointer;
+  }
+  &_footer{
+    text-align: start;
+    font-size: rem(24);
+    font-weight: 500;
+    margin-bottom: rem(15);
+  }
+}
+
+.subtitle{
+  font-size: rem(24);
+  font-weight: 600;
+  margin-bottom: rem(10);
+  &_main{
+    text-align: center;
+    font-size: rem(28);
+    font-weight: 500;
+  }
+}

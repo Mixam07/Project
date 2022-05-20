@@ -1,0 +1,49 @@
+.frameworks{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(25);
+  }
+  &__item{
+    height: 150px;
+    transition: .5s filter;
+    position: relative;
+    cursor: pointer;
+    img{
+      transition: .5s filter;
+    }
+    &::before{
+      transition: .5s opacity;
+      content: "";
+      z-index: 1;
+      position: absolute;
+      background: red;
+      background: url("../icons/cursor.svg") center/auto 100% no-repeat;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: rem(35);
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    &:hover{
+      &::before{
+        opacity: 1;
+      }
+      img{
+        filter: blur(rem(5));
+      }
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    &:nth-child(2){
+      grid-column: 2/4;
+    }
+    &:nth-child(3){
+      grid-column: 1/3;
+    }
+  }
+}
